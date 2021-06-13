@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+  width: 100%;
+  height: 6.5rem;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +46,7 @@ export const ButtonConta = styled.button`
   padding: 0.8rem 2rem;
   border-radius: 10rem;
   border: 0;
-  background-color:var(--green-100);
+  background-color: var(--green-100);
   color: var(--primary);
   font-weight: bold;
   margin-right: 1rem;

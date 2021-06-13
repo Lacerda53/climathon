@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body, input, textarea, button{
-        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: var(--text);
     }
@@ -42,7 +42,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     p{
-        font-size: 1.3rem;
         font-weight:300;
     }
 
