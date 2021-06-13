@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes/index";
 import { Header } from "./components/Header";
 import { GlobalStyle } from "./styles/global";
@@ -10,9 +10,9 @@ export function App() {
       <Header />
       <GlobalStyle />
       <Container>
-        <BrowserRouter>
+        <Router>
           <Routes />
-        </BrowserRouter>
+        </Router>
       </Container>
     </>
   );
@@ -20,4 +20,7 @@ export function App() {
 
 const Container = styled.div`
   padding-top: 6.5rem;
+  @media(max-width: 1020px){
+    padding-top: 15.5rem;
+  }
 `;

@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  width: 100%;
+  width: 100vw;
+  top: 0;
   height: 6.5rem;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary);
-  margin: 0 auto;
   padding: 2rem 10rem;
+
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15.5rem;
+    padding: 2rem 1rem;
+  }
 `;
 
 export const Logo = styled.img``;
@@ -28,9 +35,14 @@ export const Right = styled.div`
       color: var(--white);
     }
   }
+  @media (max-width: 1020px) {
+    flex-direction: column;
+  }
 `;
 
-export const Left = styled.div``;
+export const Left = styled.div`
+  display: flex;
+`;
 
 export const ButtonLogin = styled.button`
   padding: 0.8rem 2rem;

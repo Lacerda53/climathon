@@ -1,5 +1,13 @@
 import React from "react";
-import { Container, Main, CardRow, Section, Row, Card, CardTree } from "./styles";
+import {
+  Container,
+  Main,
+  CardRow,
+  Section,
+  Row,
+  Card,
+  CardTree,
+} from "./styles";
 import farm from "../../assets/farm.svg";
 import { CardHome } from "../../components/CardHome";
 import icon1 from "../../assets/icon1.svg";
@@ -61,50 +69,53 @@ export function Home() {
           <img src={certificate} alt="" />
         </Row>
       </Section>
-      <CardTree>
-        <Card>
-          <div>
-            <h1>R$25</h1>
-            <span>/mês</span>
-          </div>
-          <h3>Básico</h3>
-          <p>Para pequenos produtores que utilizam monocultura</p>
-          <ul>
-            <li>Progresso de Colheita</li>
-            <li>Atualizações da plantação</li>
-            <li>Controle de desperdício </li>
-          </ul>
-          <button>Quero esse</button>
-        </Card>
-        <Card>
-          <div>
-            <h1>R$25</h1>
-            <span>/mês</span>
-          </div>
-          <h3>Básico</h3>
-          <p>Para pequenos produtores que utilizam monocultura</p>
-          <ul>
-            <li>Progresso de Colheita</li>
-            <li>Atualizações da plantação</li>
-            <li>Controle de desperdício </li>
-          </ul>
-          <button>Quero esse</button>
-        </Card>
-        <Card>
-          <div>
-            <h1>R$25</h1>
-            <span>/mês</span>
-          </div>
-          <h3>Básico</h3>
-          <p>Para pequenos produtores que utilizam monocultura</p>
-          <ul>
-            <li>Progresso de Colheita</li>
-            <li>Atualizações da plantação</li>
-            <li>Controle de desperdício </li>
-          </ul>
-          <button>Quero esse</button>
-        </Card>
-      </CardTree>
+      <div>
+        <h1>Planos</h1>
+        <CardTree>
+          <Card>
+            <div>
+              <h1>R$25</h1>
+              <span>/mês</span>
+            </div>
+            <h3>Básico</h3>
+            <p>Para pequenos produtores que utilizam monocultura</p>
+            <ul>
+              <li>Progresso de Colheita</li>
+              <li>Atualizações da plantação</li>
+              <li>Controle de desperdício </li>
+            </ul>
+            <button>Quero esse</button>
+          </Card>
+          <Card>
+            <div>
+              <h1>R$25</h1>
+              <span>/mês</span>
+            </div>
+            <h3>Básico</h3>
+            <p>Para pequenos produtores que utilizam monocultura</p>
+            <ul>
+              <li>Progresso de Colheita</li>
+              <li>Atualizações da plantação</li>
+              <li>Controle de desperdício </li>
+            </ul>
+            <button>Quero esse</button>
+          </Card>
+          <Card>
+            <div>
+              <h1>R$25</h1>
+              <span>/mês</span>
+            </div>
+            <h3>Básico</h3>
+            <p>Para pequenos produtores que utilizam monocultura</p>
+            <ul>
+              <li>Progresso de Colheita</li>
+              <li>Atualizações da plantação</li>
+              <li>Controle de desperdício </li>
+            </ul>
+            <button>Quero esse</button>
+          </Card>
+        </CardTree>
+      </div>
     </Container>
   );
 }

@@ -10,6 +10,7 @@ import {
 import logo from "../../assets/logo.svg";
 
 export function Header() {
+
   return (
     <Container>
       <Right>
@@ -22,7 +23,7 @@ export function Header() {
       </Right>
       <Left>
         <ButtonLogin>Login</ButtonLogin>
-        <ButtonConta>Criar Conta</ButtonConta>
+        <ButtonConta to="/register">Criar Conta</ButtonConta>
       </Left>
     </Container>
   );
