@@ -14,8 +14,11 @@ import icon1 from "../../assets/icon1.svg";
 import icon2 from "../../assets/icon2.svg";
 import icon3 from "../../assets/icon3.svg";
 import certificate from "../../assets/certificate.png";
+import { useHistory } from "react-router-dom";
 
 export function Home() {
+  const history = useHistory();
+
   return (
     <Container>
       <Main>
@@ -25,7 +28,7 @@ export function Home() {
             para sua indústria
           </h1>
           <p>
-            O NOME visa te ajudar na fase de planejamento e treinamento de
+            O Sustenta visa te ajudar na fase de planejamento e treinamento de
             colaboradores para tirar as certificações Bonsucro, Etanol Verde e
             futuramente a ISO 14001
           </p>
@@ -51,7 +54,7 @@ export function Home() {
           description="Obtenha um planejamento estratégico específico para sua área de atuação."
         />
       </CardRow>
-      <Section>
+      <Section id="work">
         <h1>Como funciona</h1>
         <Row>
           <div>
@@ -64,7 +67,7 @@ export function Home() {
               Contamos com um time especializado, pronto para te atender de
               acordo com suas necessidades específicas.
             </p>
-            <button>Acessar</button>
+            <button onClick={() => history.push("/register")}>Acessar</button>
           </div>
           <img src={certificate} alt="" />
         </Row>
@@ -78,39 +81,42 @@ export function Home() {
               <span>/mês</span>
             </div>
             <h3>Básico</h3>
-            <p>Para pequenos produtores que utilizam monocultura</p>
+            <p>Ideal para indústrias que precisam de planejamento estratégico</p>
             <ul>
-              <li>Progresso de Colheita</li>
-              <li>Atualizações da plantação</li>
-              <li>Controle de desperdício </li>
+              <li>Dashboard personalizado</li>
+              <li>Direcionamento das atividades</li>
+              <li>Suporte da equipe</li>
             </ul>
             <button>Quero esse</button>
           </Card>
           <Card>
             <div>
-              <h1>R$25</h1>
+              <h1>R$50</h1>
               <span>/mês</span>
             </div>
-            <h3>Básico</h3>
-            <p>Para pequenos produtores que utilizam monocultura</p>
+            <h3>Premium</h3>
+            <p>Indicado para indústrias que precisam de treinamento</p>
             <ul>
-              <li>Progresso de Colheita</li>
-              <li>Atualizações da plantação</li>
-              <li>Controle de desperdício </li>
+            <li>Dashboard personalizado</li>
+              <li>Direcionamento das atividades</li>
+              <li>Suporte da equipe</li>
+              <li>Treinamento dos colaboradores para certificações Bonsucro e Etanol Verde</li>
             </ul>
             <button>Quero esse</button>
           </Card>
           <Card>
             <div>
-              <h1>R$25</h1>
+              <h1>R$100</h1>
               <span>/mês</span>
             </div>
-            <h3>Básico</h3>
+            <h3>Premium Master</h3>
             <p>Para pequenos produtores que utilizam monocultura</p>
             <ul>
-              <li>Progresso de Colheita</li>
-              <li>Atualizações da plantação</li>
-              <li>Controle de desperdício </li>
+            <li>Dashboard personalizado</li>
+              <li>Direcionamento das atividades</li>
+              <li>Suporte da equipe</li>
+              <li>Treinamento dos colaboradores para certificações Bonsucro e Etanol Verde</li>
+              <li>Indicação de outras certificações do mesmo setor.</li>
             </ul>
             <button>Quero esse</button>
           </Card>

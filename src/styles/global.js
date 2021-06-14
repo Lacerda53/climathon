@@ -45,6 +45,11 @@ export const GlobalStyle = createGlobalStyle`
         font-weight:300;
     }
 
+    a{
+        text-decoration: none;
+        color: var(--white);
+    }
+
     button{
         cursor: pointer;
     }

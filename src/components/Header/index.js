@@ -8,22 +8,23 @@ import {
   ButtonConta,
 } from "./styles";
 import logo from "../../assets/logo.svg";
+import { Link, useHistory } from "react-router-dom";
 
 export function Header() {
-
+  const history = useHistory()
   return (
     <Container>
       <Right>
         <Logo src={logo} />
         <ul>
-          <li>Home</li>
-          <li>Como funciona</li>
-          <li>Planos</li>
+          <li><Link to="/#">Home</Link></li>
+          <li><Link to="/#work">Como funciona</Link></li>
+          <li><Link to="/#plan">Planos</Link></li>
         </ul>
       </Right>
       <Left>
         <ButtonLogin>Login</ButtonLogin>
-        <ButtonConta to="/register">Criar Conta</ButtonConta>
+        <ButtonConta onClick={()=> history.push('/register')}>Criar Conta</ButtonConta>
       </Left>
     </Container>
   );
